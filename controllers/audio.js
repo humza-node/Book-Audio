@@ -110,3 +110,9 @@ return res.status(200).json({message: "Audio Update", results});
                     }
                 });
   };
+  exports.getAudio = async(req, res, next) =>
+  {
+    const audios = await Audio.find();
+    res.status(200).json({message: "Audios", audios});
+  };
+ 

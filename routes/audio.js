@@ -5,4 +5,5 @@ router.post('/add-audio',AudioControll.addAudio);
 router.get('/download-audio/:audioId', AudioControll.downloadAudio);
 router.put('/update-audio/:audioId', AudioControll.updateAudio);
 router.delete('/delete-audio/:audioId', AudioControll.deleteAudio);
+router.get('/get-audios', AudioControll.getAudio);
 module.exports = router;
